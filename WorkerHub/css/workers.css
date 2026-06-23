@@ -1,0 +1,164 @@
+.workers-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.filters {
+  position: sticky;
+  top: 92px;
+  display: grid;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.filters span {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.list-toolbar {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+  font-weight: 900;
+}
+
+.list-toolbar select {
+  width: 190px;
+}
+
+.worker-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.worker-card {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 8px 26px rgba(24, 33, 31, 0.06);
+}
+
+.worker-top {
+  display: flex;
+  gap: 14px;
+}
+
+.avatar {
+  width: 68px;
+  height: 68px;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  object-fit: cover;
+  background: var(--soft);
+}
+
+.worker-card h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.tag-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: var(--soft);
+  color: var(--primary-dark);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.worker-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.worker-meta span {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.worker-meta strong {
+  display: block;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.empty-state {
+  padding: 28px;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--muted);
+}
+
+.detail-shell {
+  display: grid;
+  grid-template-columns: 330px 1fr;
+  gap: 28px;
+}
+
+.profile-panel,
+.profile-content {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 8px 26px rgba(24, 33, 31, 0.06);
+}
+
+.profile-panel {
+  padding: 22px;
+}
+
+.profile-panel .avatar {
+  width: 130px;
+  height: 130px;
+  margin-bottom: 18px;
+}
+
+.profile-content {
+  padding: 26px;
+}
+
+.profile-content h1 {
+  margin-top: 0;
+  font-size: 2.2rem;
+}
+
+.skill-list,
+.review-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.review-list blockquote {
+  margin: 0;
+  padding: 14px;
+  border-left: 4px solid var(--primary);
+  background: var(--soft);
+}

@@ -1,0 +1,111 @@
+.dashboard {
+  display: grid;
+  gap: 24px;
+}
+
+.dashboard-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.metrics div,
+.panel,
+.job-card,
+.mini-worker {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.metrics div {
+  padding: 20px;
+}
+
+.metrics strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 1.8rem;
+}
+
+.metrics span {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.panel {
+  padding: 20px;
+}
+
+.panel h2 {
+  margin: 0 0 16px;
+  font-size: 1.25rem;
+}
+
+.job-list {
+  display: grid;
+  gap: 12px;
+}
+
+.job-card,
+.mini-worker {
+  padding: 14px;
+}
+
+.job-card {
+  display: grid;
+  gap: 8px;
+}
+
+.status {
+  width: fit-content;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: var(--soft);
+  color: var(--primary-dark);
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.mini-worker {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.mini-worker img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+}
+
+.checklist {
+  display: grid;
+  gap: 12px;
+}
+
+.checklist label {
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  font-weight: 800;
+}
+
+.checklist input {
+  width: 18px;
+  min-height: 18px;
+}
