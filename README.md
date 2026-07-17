@@ -1,6 +1,6 @@
-# LaborConnect
+# WorkerHub
 
-LaborConnect is a responsive frontend marketplace for hiring verified local labor workers. It helps customers discover skilled workers, compare profiles, submit booking requests, and track activity through simple customer and worker dashboards.
+WorkerHub is a responsive frontend marketplace for hiring verified local workers. It helps customers discover skilled workers, compare profiles, submit booking requests, and track activity through simple customer and worker dashboards.
 
 ## Project Overview
 
@@ -8,7 +8,7 @@ This project is built with plain HTML, CSS, and JavaScript. It does not require 
 
 ## Features
 
-- Homepage with service search and popular labor categories
+- Homepage with service search and popular worker categories
 - Worker listing page with filters for service, location, rating, rate, and sorting
 - Worker profile details with skills, rates, reviews, and booking action
 - Booking form that stores demo booking requests in browser local storage
@@ -76,25 +76,37 @@ LaborConnect/
 | `about.html` | Marketplace information |
 | `contact.html` | Contact form |
 
-## How To Run
 
-Open the project folder in a terminal:
+## Running the Project in vs code
+
+1. Install the Live Server extension in VS Code.
+2. Open the project folder in VS Code.
+3. Right-click on `index.html`.
+4. Click **"Open with Live Server"**.
+
+## Installation
+
+Clone the repository:
 
 ```bash
-cd LaborConnect
+git clone https://github.com/deb-gourab/WorkerHub.git
 ```
 
-Start a local server:
+Move into the project directory:
 
 ```bash
-python -m http.server 5173
+cd WorkerHub
 ```
 
-Then open:
+Open the project in VS Code:
 
-```text
-http://127.0.0.1:5173/index.html
+```bash
+code .
 ```
+
+## Usage
+
+Open `index.html` in your browser or run the project using the Live Server extension in VS Code.
 
 A local server is recommended because the app loads worker data from `data/workers.json`.
 
